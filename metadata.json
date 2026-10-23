@@ -1,0 +1,6 @@
+{
+  "name": "Junaid Telecom / Mobile",
+  "description": "Premium mobile phones, authentic accessories, and certified repair services in Chiniot, Punjab, Pakistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

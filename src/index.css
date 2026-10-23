@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #101B35;
+  --color-secondary: #2457D6;
+  --color-accent: #20C4D8;
+  --color-bg-main: #F5F7FB;
+  --color-card-bg: #FFFFFF;
+  --color-text-main: #202938;
+  --color-text-secondary: #687386;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Premium Card & Surface Utility Styles */
+.card-premium {
+  background-color: #ffffff;
+  border: 1px solid #E5E9F2;
+  box-shadow: 0 4px 14px -3px rgba(16, 27, 53, 0.05), 0 1px 3px 0 rgba(16, 27, 53, 0.03);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-premium:hover {
+  border-color: #D1D9E7;
+  box-shadow: 0 12px 28px -6px rgba(16, 27, 53, 0.1), 0 4px 8px -2px rgba(16, 27, 53, 0.04);
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
